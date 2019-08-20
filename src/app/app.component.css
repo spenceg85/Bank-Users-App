@@ -2,8 +2,11 @@ h1 {
   color: grey;
 }
 .users-container {
+  max-width: 1360px;
   display: flex;
   flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
   flex-flow: row wrap;
 }
 .content {
@@ -15,14 +18,21 @@ h1 {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15), 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }
 .card {
-  flex: 1 0 21%;
-  max-width: 260px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  min-width: 300px;
+  max-width: 22.5%;
   text-align: center;
+  flex-grow: 1;
+  display: inline-block;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15), 0 0 10px 0 rgba(0, 0, 0, 0.15);
   border-radius: 1%;
   margin: 15px;
   text-transform: capitalize;
   line-height: 1.6;
+}
+.card:hover {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15), 0 0 25px 0 rgba(0, 0, 0, 0.15);
 }
 .content {
   font-family: lucida;
@@ -42,4 +52,10 @@ h1 {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15), 0 0 10px 0 rgba(0, 0, 0, 0.15);
   height: 30px;
   margin-bottom: 30px;
+}
+.input-bank .form-control:hover {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15), 0 0 25px 0 rgba(0, 0, 0, 0.15);
+}
+.bank-header {
+  text-shadow: 2px 2px 8px grey;
 }
