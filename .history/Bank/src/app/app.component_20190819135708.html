@@ -1,0 +1,19 @@
+<div>
+  <h1>
+      Bank Users
+  </h1>
+</div>
+<div class="input-bank" style="text-align: center;">
+    <input type="text" #searchName class="form-control" placeholder=" Search Users" name="searchName" [(ngModel)]="searchName.value" (ngModelChange)="userSearch($event)">
+  </div>
+<div class="users-container">
+  <div class="card" *ngFor="let card of cardObjects">
+      <h2 class="full-name">{{card.fullName}}</h2>
+      <img src="{{card.pic}}" class="image" name="image"/>
+      <div class="content">
+        <p>{{card.streetLoc}}{{card.location}}</p>
+        <!-- <p>{{card.location}}</p>  -->
+      </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,22 @@
+h1 {
+    color: red;
+    border: solid red 3px;
+}
+.users-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+.content {
+    padding: 15px;
+  }
+  .image {
+    border-radius: 50%
+  }
+  .card {
+    min-width: 250px;
+    text-align: center;
+    //box-shadow: 2px 2px 2px 2px outset #888888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3%
+  }

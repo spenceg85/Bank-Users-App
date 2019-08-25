@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+    border: solid red 3px;
+}
+.users-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+.content {
+    padding: 15px;
+  }
+  .image {
+    border-radius: 50%
+  }
+  .card {
+    border-radius: 5%
+  }

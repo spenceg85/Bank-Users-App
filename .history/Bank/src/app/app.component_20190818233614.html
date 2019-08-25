@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="users-container">
+  <div class="card" *ngFor="let card of cardObjects">
+      <h2>{{card.fullName}}</h2>
+      <img src="{{card.pic}}" class="image" name="image"/>
+      <div class="content">
+        <p>{{card.streetLoc}}</p>
+        <p>{{card.location}}</p> 
+      </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

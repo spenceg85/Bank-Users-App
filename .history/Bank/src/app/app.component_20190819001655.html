@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+      Bank Users
+  </h1>
+  <div class="input-group-prepend">
+      <input type="text" #searchName class="form-control" placeholder="Search Users" name="searchName" ngModel>
+      <!-- <input #myVariable type="text" name="text" ngModel> -->
+      <!-- <span class="input-group-text" (click)="addTodo(todo.value)"><i class="material-icons">add</i></span> -->
+      <!-- <p>{{todo.value}}</p> -->
+    </div>
+</div>
+<div class="users-container">
+  <div class="card" *ngFor="let card of cardObjects">
+      <h2 class="full-name">{{card.fullName}}</h2>
+      <img src="{{card.pic}}" class="image" name="image"/>
+      <div class="content">
+        <p>{{card.streetLoc}}{{card.location}}</p>
+        <!-- <p>{{card.location}}</p>  -->
+      </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

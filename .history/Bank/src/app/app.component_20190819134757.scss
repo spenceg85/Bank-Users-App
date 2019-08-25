@@ -1,0 +1,47 @@
+h1 {
+    color: grey;
+}
+.users-container {
+    max-width: 1360px;
+    margin: auto;
+    justify-content: space-around;
+}
+.content {
+    padding: 15px;
+  }
+  .image {
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15), 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  }
+  .card {
+    min-width: 300px;
+    max-width: 22.5%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15), 0 0 10px 0 rgba(0,0,0,.15);
+    border-radius: 1%;
+    margin: 15px;
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+  .content {
+    font-family: lucida;
+    color: grey;
+    font-weight: bold;
+  }
+  .input-bank  {
+        font-family: "Raleway";
+        color: #666;
+        float: none;
+        display: block;
+        text-align: center;
+        //width: 20%;
+        margin: 0;
+        padding: 20px;
+        .form-control {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15), 0 0 10px 0 rgba(0, 0, 0, 0.15);
+            height: 30px;
+            //text-align: center;
+            margin-bottom: 30px;
+        }
+  }
